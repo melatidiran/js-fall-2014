@@ -21,6 +21,7 @@
 
           #rect.lefty {
               left: 200px;
+              background: blue;
           }
 
       </style>
@@ -30,7 +31,21 @@
         <div id="rect"></div>
 
         <script>
-            // Your work goes here.
+            var recto = document.getElementById('rect');
+            recto.classList.add('bordered');
+
+            var leftyClickHandler = function(e) {
+
+            if (e.currentTarget.classList.contains('lefty')) {
+                e.currentTarget.classList.remove('lefty');
+            } else {
+                e.currentTarget.classList.add('lefty');
+            }
+
+            };
+
+            recto.addEventListener('click', leftyClickHandler);
+
         </script>
 
     </body>
