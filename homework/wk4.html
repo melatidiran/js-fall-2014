@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>Homework</title>
+      <style>
+
+          back {
+          	  background-image: url(http://keithburgun.net/wp-content/uploads/2013/04/tumblr_mcz3mvS9Cs1rpwj1eo1_1280.jpg)
+              background: #000;
+              background-repeat: no-repeat;
+          }
+
+          .yes {
+              background-image: url(http://img4.wikia.nocookie.net/__cb20130208042141/starwars/images/b/b6/Moff_Tarkin.png);
+              background-repeat: no-repeat
+              background: #000;
+          }
+
+          .no {
+              background-image: url(http://images4.fanpop.com/image/photos/24000000/Chewie-Luke-Leia-and-Han-han-luke-and-leia-24048896-1600-1121.jpg);
+              background-repeat: no-repeat
+              background: #000;
+          }
+
+      </style>
+    </head>
+    <body>
+
+        <script>
+           
+
+          var answer = prompt("Come to the dark side of the force!");
+
+          if (answer == "yes") {
+            document.body.classList.add('yes');
+            console.log('Together, we will rule the galaxy.')
+          } else {
+            document.body.classList.add('no');
+            console.log('You have restored balance to the force.')
+          }
+          
+           for (var i = 1; i <= 1000; i++) {
+            console.log(i);
+          }
+
+		//FizzBuzz Question
+		
+		for (var i = 1; i <= 100; i += 1) {
+		if (i % 3 == 0) {
+			console.log("Fizz")
+		} else if (i % 5 == 0) {
+			console.log("Buzz")
+		} else if (1 % 5 == 0  && i % 3 == 0){
+			console.log("FizzBuzz");
+		} else {
+			console.log(i);
+			}
+		}
+	}
+
+        </script>
+
+    </body>
+</html>
